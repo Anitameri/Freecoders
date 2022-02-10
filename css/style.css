@@ -92,6 +92,11 @@ p{
     font-weight: bold;
     color: white;
 }
+.trabajos{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
 footer{
     display: flex;
     justify-content: space-evenly;
