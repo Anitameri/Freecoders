@@ -1,6 +1,10 @@
+body{
+    background-color: #C4BBF0;
+    
+}
 header{
     /* margin: 100px 50px; */
-    background-color: gray;
+    background-color: #4F3B78;
 }
 header > img{
     border: 2px solid black;
@@ -14,7 +18,7 @@ header ul {
 
  header ul li {
 	margin: 0 20px;
-	background-color: lightblue;
+	background-color: #C4BBF0;
 	padding: 10px 30px;
 	border: 1px solid grey;
 	display: inline-block;
@@ -57,15 +61,46 @@ header > nav{
 } */
 
 main > section{
-    background-color: gray;
+    background-color: #927FBF;
+}
+.textoizquierda{
+    float: left;
+    width: 70%;
+    padding-left: 2%;
+}
+.imagenderecha{
+    float: right;
+    width: 20%;
+}
+.textoderecha{
+    float: right;
+    width: 70%;
+    padding-right: 2%;
+}
+.imagenizquierda{
+    float: left;
+    width: 2%;
+    margin-left: 10%;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.Negrita{
+    font-weight: bold;
+    color: white;
 }
 footer{
     display: flex;
-    justify-content: space-between;
-    height: 150px;
-    background-color: gray;
-    margin: 0px 50px;
+    justify-content: space-evenly;
+    height: 10%;
+    background-color: #4F3B78;
 }
-footer >ul{
+footer ul{
     margin-right: 20px;
+}
+footer ul li{
+    list-style: none;
 }
