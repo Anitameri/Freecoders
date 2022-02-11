@@ -1,15 +1,49 @@
+/* Remove default padding */
+ul[class],
+ol[class] {
+      padding: 0;
+}
+
+Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+      margin: 0;
+}
+
+
 body{
     background-color: #C4BBF0;
     
 }
-header{
-    /* margin: 100px 50px; */
+
+/* parte de arriba de la página*/
+#cabecera{
+    width: 100%;
     background-color: #4F3B78;
 }
-header > img{
-    border: 2px solid black;
+
+#cabecera img{
+        border: 2px solid black;
+        float: left;
+}
+ 
+#cabecera #Titulo{
     float: left;
-} 
+    margin-left: 20%;
+}
+
 header ul {
 	margin: 0;
 	padding: 40px 0 40px 0;
@@ -32,18 +66,29 @@ header > nav > ul > li{
     color: red;
     float: left;
     width: 25%;
-} */
+}  */
 #Titulo{
-    float: right;
+    float: left;
     width: 60%;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*lo utilizamos para ahorrar problemas con los float*/
 .clear-both{
     clear: both;
 }
 
-/* header{
+.tipo1{
+    width: 100%;
+}
+
+.tipo2{
+    width: 100%;
+}
+
+/*
+
+ header{
     display: flex;
     justify-content: space-around;
     height: 200px;
@@ -63,25 +108,30 @@ header > nav{
 main > section{
     background-color: #927FBF;
 }
+
+/* tarjetas de los empleados*/
+/* tarjeta con la imagen a la derecha*/
 .textoizquierda{
     float: left;
-    width: 70%;
-    padding-left: 2%;
+    width:50%;
+    margin-left: 10%;
 }
 .imagenderecha{
     float: right;
-    width: 20%;
+    margin-right: 10%;
 }
+/*tarjeta con la imagen a la izquierda*/
 .textoderecha{
     float: right;
-    width: 70%;
-    padding-right: 2%;
+    width: 50%;
+    margin-right: 10%;
 }
 .imagenizquierda{
     float: left;
-    width: 2%;
     margin-left: 10%;
 }
+
+*/
 h3{
     text-align: center;
 }
@@ -97,9 +147,10 @@ p{
    justify-content: space-around;
    flex-wrap: wrap;
 }
+/* parte final de la pagina web*/
 footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 10%;
     background-color: #4F3B78;
 }
@@ -109,3 +160,66 @@ footer ul{
 footer ul li{
     list-style: none;
 }
+/*diseño responsiva para todos los tamaños de pantalla*/
+
+@media (max-width: 599px){
+	#Titulo{
+        font-size: 20px;
+    }
+    
+    .demasiado{
+        width: 350px;
+    }
+
+    .textoizquierda{
+        float: left;
+        width:50%;
+        margin-left: 5px;
+    }
+    .imagenderecha{
+        float: right;
+        margin-right: 5px;
+    }
+
+    .textoderecha{
+        float: right;
+        width:50%;
+        margin-right: 5px;
+    }
+    .imagenizquierda{
+        float: left;
+        margin-left: 5px;
+    }
+
+    footer ul{
+        float: left;
+        padding: 7px;
+    }
+			
+}
+            
+    
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width:600px){
+                
+} 
+    
+    
+                 /* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px){
+    
+} 
+    
+    
+                 /* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px){
+    
+} 
+    
+    
+                 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px)  {
+    
+    
+}
+    

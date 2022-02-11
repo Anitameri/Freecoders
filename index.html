@@ -8,13 +8,17 @@
     <title>Freecoders</title>
   </head>
   <body>
-    <header>
+    <header> 
+      <!-- Cabecera con logo -->
+      <div id="cabecera">
       <img src="img/logo.png" alt="Logo" />
       <div id="Titulo">
         <h1>Freecoders</h1>
       </div>
+    
       <div class="clear-both"></div>
       <nav>
+        <!-- Menu -->
         <ul>
           <li><a href="#Descripcion">Descripción</a></li>
           <li><a href="#Trabajos">Trabajos</a></li>
@@ -22,8 +26,10 @@
           <li><a href="#Contacto">Contacto</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
+      <!-- Aqui empieza nuestra empresa -->
       <section class="descripcion">
         <a name="Descripcion"></a>
         <h2>Descripción de la empresa</h2>
@@ -32,12 +38,13 @@
           profesionales que ayuda y crea los proyecto con dedicación y amor.
         </p>
       </section>
+      <!-- trabajos realizados por el equipo -->
       <section><h2>Trabajos</h2>
       <section class="trabajos">
         <a name="Trabajos"></a>
         <div>
             <h4>Paginas web</h4>
-            <img src="img/PaginasWeb.jpg" alt="Paginas web">
+            <img class="demasiado" src="img/PaginasWeb.jpg" alt="Paginas web">
         </div>
         <div>
             <h4>Aplicaciones moviles</h4>
@@ -49,7 +56,7 @@
         </div>
         <div>
             <h4>SEO</h4>
-            <img src="img/SEO.jpg" alt="SEO">
+            <img class="demasiado" src="img/SEO.jpg" alt="SEO">
         </div>
         <div>
             <h4>Marketing digital</h4>
@@ -57,15 +64,19 @@
         </div>
       </section>
     </section>
+    <!-- empleados de la empresa -->
       <section class="Equipo">
         <a name="Equipo"></a>
         <h2>Equipo</h2>
-        <div>
+        <!-- Aqui una tarjeta de cada empleado -->
+        <div class="tipo1">
           <div class="textoizquierda">
             <h3>Carlos</h3>
             <p>
-              Desarrollador web de frontend. Especialista en Resposive.
-              Javascript. Base de datos.
+              Desarrollador web de frontend. 
+              <br/>Especialista en Resposive.
+              <br/>Javascript.
+              <br/>Base de datos.
             </p>
           </div>
           <div class="imagenderecha">
@@ -73,24 +84,27 @@
           </div>
           <div class="clear-both"></div>
         </div>
-        <div>
-          <div class="textoderecha">
-            <h3>Enrique</h3>
-            <p>
-              Desarrollador web de backend. Diseño de Marketing. CEO de la
-              Empresa.
-            </p>
-          </div>
+        <div class="tipo2">
           <div class="imagenizquierda">
             <img src="img/Enrique.jpg" alt="Enrique" />
           </div>
+          <div class="textoderecha">
+            <h3>Enrique</h3>
+            <p>
+              Desarrollador web de backend.
+              <br/>Diseño de Marketing. 
+              <br/>CEO de la Empresa.
+            </p>
+          </div>
           <div class="clear-both"></div>
         </div>
-        <div>
+        <div class="tipo1">
           <div class="textoizquierda">
             <h3>Bea</h3>
             <p>
-              Desarollador web de fullstack. Diseño de Marketing. Base de datos.
+              Desarollador web de fullstack. 
+              <br/>Diseño de Marketing. 
+              <br/>Base de datos.
             </p>
           </div>
           <div class="imagenderecha">
@@ -98,25 +112,31 @@
           </div>
           <div class="clear-both"></div>
         </div>
-        <div>
-          <div class="textoderecha">
-            <h3>Jesus</h3>
-            <p>
-              Desarrollador web frontend. Responsive. Vicepresidente de la
-              Empresa. SEO.
-            </p>
-          </div>
+        <div class="tipo2">
           <div class="imagenizquierda">
             <img src="img/Jesus.png" alt="Jesus" />
           </div>
+          <div class="textoderecha">
+            <h3>Jesus</h3>
+            
+            <p>
+              Desarrollador web frontend. 
+              <br/>Responsive. 
+              <br/>Vicepresidente de la Empresa. 
+              <br/>SEO.
+            </p>
+          </div>
+          
           <div class="clear-both"></div>
         </div>
-        <div>
+        <div class="tipo1">
           <div class="textoizquierda">
             <h3>Ana Maria</h3>
             <p>
-              Desarrollador web frontend. Base de datos. Apliaciones moviles.
-              Relaciones publicas.
+              Desarrollador web frontend. 
+              <br/>Base de datos. 
+              <br/>Apliaciones moviles.
+              <br/>Relaciones publicas.
             </p>
           </div>
           <div class="imagenderecha">
@@ -126,6 +146,7 @@
         </div>
       </section>
     </main>
+    <!-- pie de página -->
     <footer>
       <ul>
         <li class="Negrita">Nuestra Empresa:</li>
